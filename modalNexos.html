@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyectoNexos.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="contenedorModal">
+        <div class="modal">
+            <div class="registrar">
+                <img src="Materiales/imagen-modal.JPG" alt="imagen-modal" class="imagenModal">
+                <div class="btnsEmpresa-Organizacion">
+                    <div class="miEmpresa">
+                        <div class="logoMaletin">
+                            <img src="Materiales/icono-maletin-2.png" alt="icono-maletin-2">
+                        </div>
+                        <div class="descripcionBtn">
+                            <h3>MI EMPRESA</h3>
+                            <span>Breve descripción a lo que nos referimos</span>
+                        </div>
+                    </div>
+                    <div class="miOrganizacion">
+                        <div class="iconoPersona">
+                            <img src="Materiales/icono-persona.png" alt="icono-persona">
+                        </div>
+                        <div class="descripcionBtn">
+                            <h3>MI ORGANIZACION</h3>
+                            <span>Estamos para ayudarlos a tener exito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="menu bordes">
+        <img src="Materiales/logo.png" alt="logo" class="logoColor">
+        <ul class="navegacion">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <button class="loginbtn bordes" id="botonIngresar">INGRESAR</button>
+    </nav>
+    <style>
+        .contenedorModal {
+            display: none;
+        }
+        .modal {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: black;
+            opacity: 0.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .registrar {
+            width: 70%;
+            height: 50%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .imagenModal {
+            width: 50%;
+            height: 100%;            
+        }
+        .btnsEmpresa-Organizacion {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .miEmpresa {
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: row;
+        }
+        .miOrganizacion {
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: row;
+        }
+        .logoMaletin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1c78fd;
+            width: 20%;
+            height: 100%;
+        }
+        .logoMaletin img {
+            width: 20px;
+            height: 20px;
+        }
+        .iconoPersona {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1c78fd;
+            width: 20%;
+            height: 100%; 
+        }
+        .iconoPersona img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+    <script>
+         document.getElementById("botonIngresar").addEventListener("click", function(){
+         document.getElementsByClassName
+         ("contenedorModal")[0].style.display="block"
+        })
+    </script>
+</body>
+</html>
